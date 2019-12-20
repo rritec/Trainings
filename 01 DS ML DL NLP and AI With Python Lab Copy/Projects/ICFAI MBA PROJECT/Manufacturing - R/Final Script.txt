@@ -1,0 +1,47 @@
+############################################################
+#              reading Data
+############################################################
+train = read.csv("C:\\Users\\Hi\\Google Drive\\01 Data Science Lab Copy\\Projects\\ICFAI MBA PROJECT\\Manufacturing - R\\product_train.csv")
+dim(train) #250078 23
+
+
+
+test = read.csv("C:\\Users\\Hi\\Google Drive\\01 Data Science Lab Copy\\Projects\\ICFAI MBA PROJECT\\Manufacturing - R\\product_test.csv")
+dim(test) #1687861 22
+
+library(dplyr)
+library(caret)
+library(pROC)
+library(DMwR)
+library(mice)
+library(xgboost)
+
+?train
+XGBT <- train(went_on_backorder ~ .,
+              data=train,
+              method="xgbTree",
+              preProcess = NULL,
+              tuneLength=5,
+              trControl = trainControl(method = "repeatedcv",
+                                       number=5,
+                                       repeats=5,
+                                       verboseIter = FALSE,
+                                       summaryFunction=multiClassSummary))
+
+
+confusionMatrix(XGBT,positive ="Yes") 
+
+# Test confusion matrix
+
+predxgb <- predict(XGBT,test,type="prob") %>% cbind(test,.)
+predxgb$Predicted=predict(XGBT,test)
+predxgb$Model="XGBT
+
+# conclusion : #XGBoost has an accuracy of 86%.
+# Export into csv
+final[final$Predicted == 1] = 'Yes'
+final[final$Predicted == 0] = 'No'
+final <- predxgb[,c(1,23)]
+write.csv(final,file = 'mydata.csv')
+
+

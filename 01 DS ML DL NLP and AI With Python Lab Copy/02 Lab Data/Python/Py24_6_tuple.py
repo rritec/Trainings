@@ -1,0 +1,12 @@
+print("***** 01. Define tuple *****")
+even_nums = (2,4,6,8)
+print("***** 02. know the Data type *****")
+print(type(even_nums))
+print("***** 03. Map tuple items to variables *****")
+a,b,c,d =even_nums
+print("a = " + str(a))
+print("b = " + str(b))
+print("c = " + str(c))
+print("d = " + str(d))
+print("***** 04. Access tuple elements like you do with lists *****")
+print(even_nums[0])

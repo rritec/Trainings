@@ -1,0 +1,57 @@
+library(tree)
+library(ISLR)
+library(randomForest)
+library(dplyr)
+med = read.csv("C:\\Users\\Hi\\Google Drive\\01 Data Science Lab Copy\\Projects\\ICFAI MBA PROJECT\\Counterfeit - Python Ana\\counterfeit_train.csv")
+View(med)
+glimpse(med)
+
+
+#step 1: Data preparation
+
+med=med %>%
+  na.omit()
+glimpse(med)
+
+#divide data into test n train in ration 30:70%
+set.seed(3)
+s=sample(1:nrow(med),0.7*nrow(med))
+med_train=med[s,]
+med_val=med[-s,]
+# STEP 2: Lets build tree model on train data
+
+med.tree=tree(Counterfeit_Sales~.-Medicine_ID,data=med_train,
+              na.action = na.exclude)
+summary(med.tree)
+
+
+plot(med.tree)
+text(med.tree,pretty = 0)
+
+
+#step 3:Predict for val data model and find error rmse
+#med_test = read.csv("C:\\Users\\Hi\\Google Drive\\01 Data Science Lab Copy\\Projects\\ICFAI MBA PROJECT\\Counterfeit - Python Ana\\counterfeit_test.csv")
+med.pred=predict(med.tree,newdata = med_val)
+
+sum((med_val$Counterfeit_Sales-med.pred)**2) %>%
+  sqrt() #43909.75
+# Step 4: Lets prune the tree
+set.seed(3)
+cv.med=cv.tree(med.tree)
+
+# step 5: lets plot the pruned tree
+
+plot(cv.med$size,cv.med$dev,type="b")
+
+
+# LETS DO RANDOM FOREST MODEL
+
+med.rf=randomForest(Counterfeit_Sales~.-Medicine_ID,data=med_train,na.action = na.exclude)#can use do.trace=T
+med.rf
+med.rf.pred=predict(med.rf,newdata = med_val)
+
+
+sum((med_val$Counterfeit_Sales-med.rf.pred)**2) %>% 
+  sqrt() #43450
+importance(med.rf)
+varImpPlot(med.rf)

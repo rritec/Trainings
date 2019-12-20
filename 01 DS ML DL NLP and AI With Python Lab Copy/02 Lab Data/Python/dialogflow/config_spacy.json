@@ -1,0 +1,5 @@
+{
+  "pipeline": "spacy_sklearn",
+  "path" : "C:\\Users\\Hi\\Google Drive\\01 Data Science Lab Copy\\02 Lab Data\\Python\\dialogflow\\projects",
+  "data" : "C:\\Users\\Hi\\Google Drive\\01 Data Science Lab Copy\\02 Lab Data\\Python\\dialogflow\\projects\\data\\examples\\rasa"
+}

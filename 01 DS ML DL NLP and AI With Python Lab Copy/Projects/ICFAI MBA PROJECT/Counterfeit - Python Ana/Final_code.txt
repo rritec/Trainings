@@ -1,0 +1,94 @@
+# Import modules
+from pandas.io.parsers import read_csv
+import pandas as pd
+from sklearn import preprocessing
+from sklearn.cross_validation import train_test_split
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import accuracy_score
+
+# Read train Data
+train_orginal = pd.read_csv("counterfeit_train.csv")
+train_orginal.info() # 6818 * 12 Columns
+
+# Remove null rows
+train = train_orginal.fillna(1) # use axis = 1 to drop columns
+train.info()
+type(train)
+
+# limit to categorical data using df.select_dtypes()
+X = train.select_dtypes(include=[object])
+X.head(3)
+X.shape
+type(X)
+X.info()
+X = X.iloc[0:,[1,2,3,4,5,6]]
+X
+# TODO: create a LabelEncoder object and fit it to each feature in X
+le = preprocessing.LabelEncoder()
+X_2 = X.apply(le.fit_transform)
+X_2.head()
+type(X_2)
+
+#OneHotEncoder
+enc = preprocessing.OneHotEncoder()
+enc.fit(X_2)
+onehotlabels = enc.transform(X_2).toarray()
+
+
+train.columns.values[[1,3,4,7]]
+X_3 = (train[train.columns[[1,3,4,7]]].values)
+type(X)
+y = (train[train.columns[11]].values)
+type(y)
+
+T =np.concatenate((onehotlabels, X_3), axis=1)
+
+#Split train data into train and validation data 
+X_train, X_val, y_train, y_val = train_test_split(T, y, test_size=0.3,random_state=42)
+
+
+rfr = RandomForestRegressor(n_estimators = 10,
+                                      criterion = 'mse',
+                                      random_state = 0)
+rfr.fit(X_train, y_train) 
+
+y_val_pred = rfr.predict(X_val)
+
+rfr.score(X_val, y_val) # 0.46
+
+##################################
+
+
+# Read test Data
+test_orginal = pd.read_csv("counterfeit_test.csv")
+test_orginal.info() # 6818 * 12 Columns
+
+# Remove null rows
+test = test_orginal.fillna(1) # use axis = 1 to drop columns
+test.info()
+type(test)
+
+# limit to categorical data using df.select_dtypes()
+X_test = test.select_dtypes(include=[object])
+X_test
+X_test = X_test.iloc[0:,[1,2,3,4,5,6]]
+# TODO: create a LabelEncoder object and fit it to each feature in X
+le = preprocessing.LabelEncoder()
+X_2_test = X_test.apply(le.fit_transform)
+X_2_test
+
+#OneHotEncoder
+enc = preprocessing.OneHotEncoder()
+enc.fit(X_2_test)
+onehotlabels_test = enc.transform(X_2_test).toarray()
+onehotlabels_test
+onehotlabels_test.shape
+test.columns.values[[1,3,4,7]]
+X_3_test = (test[test.columns[[1,3,4,7]]].values)
+X_3_test.shape
+T =np.concatenate((onehotlabels_test, X_3_test), axis=1)
+T.shape
+y_test_pred = rfr.predict(T)
+
+type(y_test_pred)
+np.savetxt("out.csv", y_test_pred, delimiter=",")

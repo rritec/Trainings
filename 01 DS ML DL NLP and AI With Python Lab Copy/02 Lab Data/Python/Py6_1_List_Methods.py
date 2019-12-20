@@ -1,0 +1,15 @@
+#######List Methods####
+deptnos = [10,20,30,10]
+print("count of deptno 10 is : ")
+print(deptnos.count(10))
+print("Index of deptno 20 is : ")
+print(deptnos.index(20 ))
+print("Extend list with value 50 : ")
+deptnos.append(50)
+print(deptnos)
+print("Remove 30 from list : ")
+deptnos.remove(30)
+print(deptnos)
+print("Reverse elements of list : ")
+deptnos.reverse()
+print(deptnos)

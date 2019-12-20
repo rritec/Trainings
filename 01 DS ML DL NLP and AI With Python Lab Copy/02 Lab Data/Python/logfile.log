@@ -1,0 +1,146 @@
+INFO:root:6
+INFO:root:searching for files
+INFO:root:waiting for files
+INFO:root:6
+INFO:root:searching for files
+INFO:root:waiting for files
+INFO:root:6
+INFO:root:searching for files
+INFO:root:waiting for files
+INFO:root:6
+INFO:root:searching for files
+INFO:root:waiting for files
+INFO:root:7
+INFO:root:searching for files
+INFO:root:waiting for files
+INFO:root:7
+INFO:root:searching for files
+INFO:root:waiting for files
+INFO:root:7
+INFO:root:searching for files
+INFO:root:waiting for files
+INFO:root:7
+INFO:root:searching for files
+INFO:root:waiting for files
+INFO:root:7
+INFO:root:searching for files
+INFO:root:waiting for files
+INFO:root:5
+INFO:root:searching for files
+INFO:root:files found moving to next process
+INFO:root:spliting files
+INFO:root:5
+INFO:root:searching for files5
+INFO:root:files found moving to next process
+INFO:root:5
+INFO:root:searching for files5
+INFO:root:files found moving to next process
+INFO:root:5
+INFO:root:searching for files5
+INFO:root:Recived all 5 Files
+INFO:root:4
+INFO:root:searching for files4
+INFO:root:waiting for files
+INFO:root:4
+INFO:root:searching for files4
+INFO:root:waiting for files
+INFO:root:4
+INFO:root:searching for files4
+INFO:root:waiting for files
+INFO:root:4
+INFO:root:searching for files4
+INFO:root:waiting for files
+INFO:root:4
+INFO:root:searching for files4
+INFO:root:waiting for files
+INFO:root:4
+INFO:root:searching for files4
+INFO:root:waiting for files
+INFO:root:4
+INFO:root:searching for files4
+INFO:root:waiting for files
+INFO:root:5
+INFO:root:searching for files5
+INFO:root:Recived all 5 Files
+INFO:root:connecting to database
+INFO:root:Mongo Database Connected successfully!!!
+INFO:root:5
+INFO:root:searching for files5
+INFO:root:Recived all 5 Files
+INFO:root:5
+INFO:root:searching for files5
+INFO:root:Recived all 5 Files
+INFO:root:File Names are ['transaction_fr.csv', 'transaction_mo.csv', 'transaction_th.csv', 'transaction_Tu.csv', 'transaction_we.csv'] 
+INFO:root:inserted CY data into database
+INFO:root:inserted CY data into database
+INFO:root:Inserted All {file_count} files into {collection}
+INFO:root:Inserted All 5 files into Collection(Database(MongoClient(host=['localhost:27017'], document_class=dict, tz_aware=False, connect=True), 'empdb'), 'customers')
+INFO:root:Mongo Database Connected successfully and connection details are Collection(Database(MongoClient(host=['localhost:27017'], document_class=dict, tz_aware=False, connect=True), 'empdb'), 'customers')
+INFO:root:Inserted All 5 files into Collection(Database(MongoClient(host=['localhost:27017'], document_class=dict, tz_aware=False, connect=True), 'empdb'), 'customers')
+INFO:root:Inserted All 5 files
+INFO:root:Inserted All 5 files
+INFO:root:creating backup for files
+INFO:root:creating backup for files
+INFO:root:5
+INFO:root:searching for files5
+INFO:root:Recived all 5 Files
+INFO:root:File Names are ['transaction_fr.csv', 'transaction_mo.csv', 'transaction_th.csv', 'transaction_Tu.csv', 'transaction_we.csv'] 
+INFO:root:Mongo Database Connected successfully and connection details are Collection(Database(MongoClient(host=['localhost:27017'], document_class=dict, tz_aware=False, connect=True), 'empdb'), 'customers')
+INFO:root:Inserted All 5 files
+INFO:root:5
+INFO:root:searching for files5 @Fri Oct 11 11:44:39 2019
+INFO:root:Recived all 5 Files
+INFO:root:File Names are ['transaction_fr.csv', 'transaction_mo.csv', 'transaction_th.csv', 'transaction_Tu.csv', 'transaction_we.csv'] 
+INFO:root:5
+INFO:root:searching for files5 started at Fri Oct 11 11:45:01 2019
+INFO:root:Recived all 5 Files
+INFO:root:File Names are ['transaction_fr.csv', 'transaction_mo.csv', 'transaction_th.csv', 'transaction_Tu.csv', 'transaction_we.csv'] 
+INFO:root:5
+INFO:root:searching for files 5 started at Fri Oct 11 11:47:57 2019
+INFO:root:waiting for files Fri Oct 11 11:47:57 2019
+INFO:root:5
+INFO:root:searching for files 5 started at Fri Oct 11 11:47:57 2019
+INFO:root:waiting for files Fri Oct 11 11:47:57 2019
+INFO:root:5
+INFO:root:searching for files 5 started at Fri Oct 11 11:47:57 2019
+INFO:root:waiting for files Fri Oct 11 11:47:57 2019
+INFO:root:5
+INFO:root:searching for files 5 started at Fri Oct 11 11:47:57 2019
+INFO:root:waiting for files Fri Oct 11 11:47:57 2019
+INFO:root:5
+INFO:root:searching for files 5 started at Fri Oct 11 11:50:29 2019
+INFO:root:Files not found waiting for files Fri Oct 11 11:50:29 2019
+INFO:root:5
+INFO:root:searching for files 5 started at Fri Oct 11 11:50:29 2019
+INFO:root:Files not found waiting for files Fri Oct 11 11:50:29 2019
+INFO:root:5
+INFO:root:searching for files 5 started at Fri Oct 11 11:52:15 2019
+INFO:root:Files not found waiting for files Fri Oct 11 11:52:15 2019
+INFO:root:5
+INFO:root:searching for files 5 started at Fri Oct 11 11:52:35 2019
+INFO:root:Files not found waiting for files Fri Oct 11 11:52:35 2019
+INFO:root:5
+INFO:root:searching for files 5 started at Fri Oct 11 11:52:55 2019
+INFO:root:Files not found waiting for files Fri Oct 11 11:52:55 2019
+INFO:root:5
+INFO:root:searching for files 5 started at Fri Oct 11 11:53:15 2019
+INFO:root:Files not found waiting for files Fri Oct 11 11:53:15 2019
+INFO:root:5
+INFO:root:searching for files 5 started at Fri Oct 11 11:53:39 2019
+INFO:root:Recived all 5 Files
+INFO:root:File Names are ['transaction_fr.csv', 'transaction_mo.csv', 'transaction_th.csv', 'transaction_Tu.csv', 'transaction_we.csv'] 
+INFO:root:5
+INFO:root:searching for files 5 started at Fri Oct 11 11:53:52 2019
+INFO:root:Recived all 5 Files
+INFO:root:File Names are ['transaction_fr.csv', 'transaction_mo.csv', 'transaction_th.csv', 'transaction_Tu.csv', 'transaction_we.csv'] 
+INFO:root:Mongo Database Connected successfully and connection details are Collection(Database(MongoClient(host=['localhost:27017'], document_class=dict, tz_aware=False, connect=True), 'empdb'), 'customers')
+INFO:root:Inserted All 5 files
+INFO:root:creating backup for files
+INFO:root:creating backup for files
+INFO:root:5
+INFO:root:searching for files 5 started at Fri Oct 11 12:31:47 2019
+INFO:root:Recived all 5 Files
+INFO:root:File Names are ['transaction_fr.csv', 'transaction_mo.csv', 'transaction_th.csv', 'transaction_Tu.csv', 'transaction_we.csv'] 
+INFO:root:Mongo Database Connected successfully and connection details are Collection(Database(MongoClient(host=['localhost:27017'], document_class=dict, tz_aware=False, connect=True), 'empdb'), 'customers')
+INFO:root:Inserted All 5 files
+INFO:root:creating backup for files

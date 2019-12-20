@@ -1,0 +1,105 @@
+pd_train=read.csv("product_train.csv",stringsAsFactors = F)
+
+###################
+#Part1
+
+glimpse(pd_train)
+
+mean_yes=pd_train$min_bank[pd_train$went_on_backorder=="Yes"]
+
+mean_no=pd_train$min_bank[pd_train$went_on_backorder=="No"]
+
+
+t.test(mean_yes,mean_no,mean.equal=TRUE)
+
+chisq.test(table(pd_train$deck_risk,pd_train$went_on_backorder))
+
+
+s=subset(pd_train, went_on_backorder=="Yes")
+median(s$perf_6_month_avg)-median(s$perf_12_month_avg)
+
+
+sum(s$pieces_past_due==0)/nrow(pd_train)*100
+
+cor.test(s$forecast_9_month,s$sales_9_month)
+
+??cor
+library(ggplot2)
+geom_h
+
+
+??randomForest
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pd_test=read.csv("product_test.csv",stringsAsFactors = F)
+
+
+wt=pd_train$went_on_backorder
+
+pd_train=pd_train %>%
+  select(-went_on_backorder)
+
+pd=rbind(pd_train,pd_test)
+rownames(pd)=1:nrow(pd)
+
+pd=pd %>%
+  mutate(deck_risk=as.numeric(deck_risk=="No"),
+         oe_constraint=as.numeric(oe_constraint=="No"),
+         ppap_risk=as.numeric(ppap_risk=="No"),
+         stop_auto_buy=as.numeric(stop_auto_buy=="No"),
+         rev_stop=as.numeric(rev_stop=="No"),
+         potential_issue=as.numeric(potential_issue=="No"))
+
+
+pd=pd %>%
+  select(-sku) 
+
+glimpse(pd)
+
+pd=pd %>%
+  mutate(deck_risk=as.factor(deck_risk),
+         oe_constraint=as.factor(oe_constraint),
+         ppap_risk=as.factor(ppap_risk),
+         stop_auto_buy=as.factor(stop_auto_buy),
+         rev_stop=as.factor(rev_stop),
+         potential_issue=as.factor(potential_issue))
+glimpse(pd)
+
+pd_train=pd[1:250078,]
+pd_test=pd[250079:312598,]
+
+pd_train$went_on_backorder=wt
+pd_train=na.omit(pd_train)
+library(randomForest)
+fit=randomForest(as.factor(went_on_backorder)~.,data=pd_train,classwt=c(0.99,0.01),do.trace=T)
+fit
+
+response=predict(fit,newdata = pd_test)
+
+pd_score=read.csv("product_test_for_scoring.csv",stringsAsFactors = F)
+glimpse(pd_score)
+
+table(pd_score$x,response)
+
+TN=sum(response=="No" & pd_score$x=="No")
+FN=sum(response=="No" & pd_score$x=="Yes")
+FP=sum(response=="Yes" & pd_score$x=="No")
+TP=sum(response=="Yes" & pd_score$x=="Yes")
+P=FN+TP
+N=TN+FP
+
+(62111/62115)-(385/405)
+KS=abs((TP/P)-(FP/N))
+KS

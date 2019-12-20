@@ -1,0 +1,70 @@
+{
+  "id": "7a3b3fe7-fae0-4356-8100-0c6324d09ec5",
+  "name": "Response",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "actResponse",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "059bb0fa-29a7-4994-80b2-53c86ac78e04",
+          "required": false,
+          "dataType": "@query_identifier",
+          "name": "query_identifier",
+          "value": "$query_identifier",
+          "isList": false
+        },
+        {
+          "id": "3f85a0aa-b8fd-48f0-8ea1-422edff8f801",
+          "required": false,
+          "dataType": "@HospitalList",
+          "name": "HospitalList",
+          "value": "$HospitalList",
+          "isList": false
+        },
+        {
+          "id": "13e47d6e-9743-43fb-a84f-db85389f3b88",
+          "required": false,
+          "dataType": "@tinid",
+          "name": "tinid",
+          "value": "$tinid",
+          "isList": false
+        },
+        {
+          "id": "71511e42-b7a3-4069-bc36-60af94da8128",
+          "required": false,
+          "dataType": "@ClaimNumer",
+          "name": "ClaimNumer",
+          "value": "$ClaimNumer",
+          "isList": false
+        },
+        {
+          "id": "9ab2f379-3557-442a-ba15-a2b431cd55cc",
+          "required": false,
+          "dataType": "@year",
+          "name": "year",
+          "value": "$year",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520403894,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,1 @@
+python -m rasa_core.train -d "C:\\Users\\Hi\\Google Drive\\01 Data Science Lab Copy\\02 Lab Data\\Python\\rasacore\\domain.yml" -s "C:\\Users\\Hi\\Google Drive\\01 Data Science Lab Copy\\02 Lab Data\\Python\\rasacore\\stories.md" -o "C:\\Users\\Hi\\Google Drive\\01 Data Science Lab Copy\\02 Lab Data\\Python\\rasacore\\models\\dialogue"

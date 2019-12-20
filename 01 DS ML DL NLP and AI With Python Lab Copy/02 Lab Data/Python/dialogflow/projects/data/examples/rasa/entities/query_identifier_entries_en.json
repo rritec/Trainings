@@ -1,0 +1,136 @@
+[
+  {
+    "value": "number of claims",
+    "synonyms": [
+      "number of claims",
+      "total number of claims",
+      "claims number",
+      "total claims",
+      "how many claims",
+      "total claims",
+      "number of claims",
+      "how many claim",
+      "how many claims"
+    ]
+  },
+  {
+    "value": "complete denials reason code",
+    "synonyms": [
+      "complete denials reason code",
+      "complete denial reason code",
+      "complete denial reason codes",
+      "reason code for complete denials",
+      "reason code for complete denial",
+      "why my claims are completely denials",
+      "why claims are complete denial",
+      "why claims are complete denials",
+      "complete denials reasons",
+      "reasons for complete denials",
+      "reason for complete denial"
+    ]
+  },
+  {
+    "value": "reasons of partial denial",
+    "synonyms": [
+      "reasons of partial denial"
+    ]
+  },
+  {
+    "value": "numer of claims",
+    "synonyms": [
+      "numer of claims"
+    ]
+  },
+  {
+    "value": "ytd",
+    "synonyms": [
+      "ytd",
+      "amount paid ytd",
+      "ytd amount"
+    ]
+  },
+  {
+    "value": "status",
+    "synonyms": [
+      "status",
+      "status of claims",
+      "claims status",
+      "details",
+      "history",
+      "full details",
+      "all details",
+      "overall status",
+      "ovearll info"
+    ]
+  },
+  {
+    "value": "amount paid",
+    "synonyms": [
+      "amount paid",
+      "amount_paid"
+    ]
+  },
+  {
+    "value": "complete denials",
+    "synonyms": [
+      "complete denials",
+      "complete denials",
+      "complete denial",
+      "denial complete",
+      "denials complete",
+      "how many complete denials"
+    ]
+  },
+  {
+    "value": "partial denials reason code",
+    "synonyms": [
+      "partial denials reason code",
+      "reason code for partial denials",
+      "reason code for partial denial",
+      "partial denail reason code",
+      "why claims are partial denials",
+      "why clims are partially denied",
+      "claims are partially denied",
+      "claims are partial denial",
+      "reason for partial denial",
+      "reasons for partial denails"
+    ]
+  },
+  {
+    "value": "reasons for complete denials",
+    "synonyms": [
+      "reasons for complete denials"
+    ]
+  },
+  {
+    "value": "reason code for parital denial",
+    "synonyms": [
+      "reason code for parital denial"
+    ]
+  },
+  {
+    "value": "reasons of complete denial",
+    "synonyms": [
+      "reasons of complete denial"
+    ]
+  },
+  {
+    "value": "partial denials",
+    "synonyms": [
+      "partial denials",
+      "denials partial",
+      "partial denial",
+      "denial partial",
+      "how many partial denials"
+    ]
+  },
+  {
+    "value": "appeals",
+    "synonyms": [
+      "appeals",
+      "appeal",
+      "appeals status",
+      "how many appeals"
+    ]
+  }
+]

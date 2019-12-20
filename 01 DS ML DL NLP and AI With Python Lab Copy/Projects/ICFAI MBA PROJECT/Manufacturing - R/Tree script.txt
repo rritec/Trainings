@@ -1,0 +1,99 @@
+#              Calliing required libraries   
+############################################################
+library(dplyr)
+library(caret)
+library(pROC)
+library(DMwR)
+library(mice)
+############################################################
+#              reading Data
+############################################################
+Tdata = read.csv("C:\\Users\\Hi\\Google Drive\\01 Data Science Lab Copy\\Projects\\ICFAI MBA PROJECT\\Manufacturing - R\\product_train.csv")
+dim(Tdata) #250078 23
+
+
+
+Tdata1 = read.csv("C:\\Users\\Hi\\Google Drive\\01 Data Science Lab Copy\\Projects\\ICFAI MBA PROJECT\\Manufacturing - R\\Kaggle_Training_Dataset_v2.csv")
+dim(Tdata1) #1687861 23
+
+?complete.cases
+############################################################
+#              Removing missing data
+############################################################
+good = complete.cases(Tdata)
+class(good)
+summary(good)
+tdata = Tdata[good,]
+class(tdata)
+dim(tdata) # 25oo78 23
+
+# Conclusion : no null values in given data set 
+
+
+############################################################
+#              Checking Target Unbalance 
+############################################################
+table(tdata$went_on_backorder)
+############################################################
+#              Checking data
+############################################################
+str(tdata)
+tdata$sku = as.numeric(tdata$sku)
+
+############################################################
+#              converting yes/no to 1/0
+############################################################
+indx = sapply(tdata,is.factor) # knowing factor columns
+indx
+tdata[indx]= lapply(tdata[indx],as.character)
+str(tdata)
+tdata[tdata == "Yes"] = 1
+tdata[tdata == "No"] = 0
+tdata[indx]= lapply(tdata[indx],as.numeric)
+str(tdata)
+
+
+############################################################
+#              setting Seed
+############################################################
+set.seed(111)
+
+
+
+############################################################
+#              Partitioning data in to train and test
+############################################################
+train_data = createDataPartition(tdata$went_on_backorder, p = .8,list = F,times =1)
+test_data = tdata[-train_data,]
+train_data = tdata[train_data,]
+train_data$went_on_backorder = as.factor(train_data$went_on_backorder)
+str(train_data$went_on_backorder)
+############################################################
+#              Checking Target Unbalance 
+############################################################
+prop.table(table(train_data$went_on_backorder))
+
+
+############################################################
+#              using SMOTE for balancing the data
+############################################################
+train_data = SMOTE(went_on_backorder ~.,train_data,perc.over = 150,perc.under = 100)
+prop.table(table(train_data$went_on_backorder))
+train_data$went_on_backorder = as.numeric(train_data$went_on_backorder)
+
+############################################################
+#              Building training data using treebag
+############################################################
+ctrl = trainControl(method = "cv",number = 5)
+tbmodel = train(went_on_backorder ~.,data = train_data, method = "treebag", trControl = ctrl)
+predictors = names(train_data[names(train_data) !='went_on_backorder'])
+pred = predict(tbmodel$finalModel,test_data[,predictors])
+############################################################
+#              Checking Results
+############################################################
+auc = roc(test_data$went_on_backorder,pred)
+print(auc)
+plot(auc)
+
+
+??KS

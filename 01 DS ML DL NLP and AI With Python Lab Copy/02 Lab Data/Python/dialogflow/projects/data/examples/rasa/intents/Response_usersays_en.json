@@ -1,0 +1,1380 @@
+[
+  {
+    "id": "81b548b0-a2eb-4541-80dd-ad06a73a8131",
+    "data": [
+      {
+        "text": "okay, let me ask you a question to get ",
+        "userDefined": false
+      },
+      {
+        "text": "complete denials reasons",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": true
+      },
+      {
+        "text": " for tin id ",
+        "userDefined": false
+      },
+      {
+        "text": "2235370117",
+        "alias": "tinid",
+        "meta": "@tinid",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1520403894
+  },
+  {
+    "id": "353e9df9-6104-4ce0-811d-00a82ed28786",
+    "data": [
+      {
+        "text": "what is ",
+        "userDefined": false
+      },
+      {
+        "text": "total claims",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "ADVOCARE",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "ea2d1c44-ac4f-4a5d-bc58-0bd54a1c4ea4",
+    "data": [
+      {
+        "text": "get me the ",
+        "userDefined": false
+      },
+      {
+        "text": "details",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " of ",
+        "userDefined": false
+      },
+      {
+        "text": "reason codes for complete denial",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for claim ",
+        "userDefined": false
+      },
+      {
+        "text": "3004",
+        "alias": "ClaimNumer",
+        "meta": "@ClaimNumer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "a0319b23-9a4f-495f-b58e-daf927e495b7",
+    "data": [
+      {
+        "text": "reason codes for partial denials",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": true
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "NORTHWELL HEALTH SYSTEM",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "ba325785-fd2f-423d-9e45-144895cf003c",
+    "data": [
+      {
+        "text": "Hey likhi, ",
+        "userDefined": false
+      },
+      {
+        "text": "how many cliams",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": true
+      },
+      {
+        "text": " i have submitted for the account ",
+        "userDefined": false
+      },
+      {
+        "text": "affinity",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "d8ac864f-3a01-4426-9105-5d5b96381a56",
+    "data": [
+      {
+        "text": "can you show me the ",
+        "userDefined": false
+      },
+      {
+        "text": "reason codes for complete denials",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": true
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "ADVOCARE",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "0066c697-2fba-42ca-86d1-ed742dfa5f1a",
+    "data": [
+      {
+        "text": "show me the total claims for NORTHWELL HEALTH SYSTEM havin tin 1245841329 with claim number 1010",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "a95bb81d-449c-4897-a7bb-a8d8cd821920",
+    "data": [
+      {
+        "text": "what is the ",
+        "userDefined": false
+      },
+      {
+        "text": "status of claims",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "NORTHWELL HEALTH SYSTEM",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "06bd165d-a1f1-430c-bdba-cfe46fea8c41",
+    "data": [
+      {
+        "text": "hello likhhi, would it possible to show me ",
+        "userDefined": false
+      },
+      {
+        "text": "full details",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for the strategic account ",
+        "userDefined": false
+      },
+      {
+        "text": "advocare",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "481eecae-f42b-4100-99a1-c0fb4f8f5e0f",
+    "data": [
+      {
+        "text": "show me the ",
+        "userDefined": false
+      },
+      {
+        "text": "total claims",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "NORTHWELL HEALTH SYSTEM",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      },
+      {
+        "text": " havin tin ",
+        "userDefined": false
+      },
+      {
+        "text": "1245841329",
+        "alias": "tinid",
+        "meta": "@tinid",
+        "userDefined": false
+      },
+      {
+        "text": " with ",
+        "userDefined": false
+      },
+      {
+        "text": "claim number",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "1010",
+        "alias": "ClaimNumer",
+        "meta": "@ClaimNumer",
+        "userDefined": false
+      },
+      {
+        "text": " only for ",
+        "userDefined": false
+      },
+      {
+        "text": "2017",
+        "alias": "year",
+        "meta": "@year",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "4a28b8a8-53b5-4b88-989a-87ef606d6d6f",
+    "data": [
+      {
+        "text": "show me the ",
+        "userDefined": false
+      },
+      {
+        "text": "status",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": true
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "NORTHWELL HEALTH SYSTEM",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": true
+      },
+      {
+        "text": " and tin id ",
+        "userDefined": false
+      },
+      {
+        "text": "1245841326",
+        "alias": "tinid",
+        "meta": "@tinid",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "ab105546-dc4c-4616-bb0b-7d1c9d83f7c4",
+    "data": [
+      {
+        "text": "show me ",
+        "userDefined": false
+      },
+      {
+        "text": "total claims",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "NORTHWELL HEALTH SYSTEM",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      },
+      {
+        "text": " with tin id  ",
+        "userDefined": false
+      },
+      {
+        "text": "1245841323",
+        "alias": "tinid",
+        "meta": "@tinid",
+        "userDefined": false
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "claim number",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "1001",
+        "alias": "ClaimNumer",
+        "meta": "@ClaimNumer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "03a33bd5-01d6-4dd0-9843-a44da020ba1d",
+    "data": [
+      {
+        "text": "NORTHWELL HEALTH SYSTEM",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1520403894
+  },
+  {
+    "id": "35a2f5e0-f96e-46e6-aa03-95fef1f7c7b7",
+    "data": [
+      {
+        "text": "how many claims",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " submitted for hey, show me ",
+        "userDefined": false
+      },
+      {
+        "text": "AFFINITY",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "0afce940-53e4-4ddb-b21f-a3037264d9b9",
+    "data": [
+      {
+        "text": "why claims are completely denials",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": true
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "ADVOCARE",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "c54670f7-9b32-4cb5-b2b1-bf8c223ec550",
+    "data": [
+      {
+        "text": "what is ",
+        "userDefined": false
+      },
+      {
+        "text": "amount paid ytd",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "advocare",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "bf3b9f0b-c8e2-48b2-9eae-ac0e5a197cd2",
+    "data": [
+      {
+        "text": "what is ",
+        "userDefined": false
+      },
+      {
+        "text": "partial denials reason codes",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": true
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "ADVOCARE",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "6425aec8-a345-4fc0-8ade-0acf576f3c35",
+    "data": [
+      {
+        "text": "what is ",
+        "userDefined": false
+      },
+      {
+        "text": "ytd amount",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": true
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "ADVOCARE",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "51edf07b-9a08-46f8-bcb1-197c93f07508",
+    "data": [
+      {
+        "text": "is it possible to get me the ",
+        "userDefined": false
+      },
+      {
+        "text": "total claims",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "ADVOCARE",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "a6bd156a-5f99-4da5-b03e-d63c903b9068",
+    "data": [
+      {
+        "text": "hey likhi, can you get me the ",
+        "userDefined": false
+      },
+      {
+        "text": "reasons of partial denial",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": true
+      },
+      {
+        "text": " for the account ",
+        "userDefined": false
+      },
+      {
+        "text": "advocare",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "2cfc8356-2cbe-4c5e-8219-0ebc93f7162b",
+    "data": [
+      {
+        "text": "hey likhi, can you get me the ",
+        "userDefined": false
+      },
+      {
+        "text": "reasons of complete denial",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": true
+      },
+      {
+        "text": " for the account ",
+        "userDefined": false
+      },
+      {
+        "text": "advocare",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "937e3c3a-b7e8-4f0c-ac7e-3cd16f8e2db0",
+    "data": [
+      {
+        "text": "get me the ",
+        "userDefined": false
+      },
+      {
+        "text": "reasons for partial denials",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "advocare",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "5a4b7bc3-0ff2-4ca1-b811-4cb4bd3bcdc9",
+    "data": [
+      {
+        "text": "show me ",
+        "userDefined": false
+      },
+      {
+        "text": "reason codes for partial denials",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": true
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "ADVOCARE",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "222e1748-1a03-44d8-b713-87a1eb5401ad",
+    "data": [
+      {
+        "text": "show me ",
+        "userDefined": false
+      },
+      {
+        "text": "total claims",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for the tin ",
+        "userDefined": false
+      },
+      {
+        "text": "1245841323",
+        "alias": "tinid",
+        "meta": "@tinid",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "db575ff4-a816-40cf-9539-b7c853a773b9",
+    "data": [
+      {
+        "text": "can you get me ",
+        "userDefined": false
+      },
+      {
+        "text": "status",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "NORTHWELL HEALTH SYSTEM",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "e102273f-7720-4570-970f-ac03a09ddf20",
+    "data": [
+      {
+        "text": "get me the ",
+        "userDefined": false
+      },
+      {
+        "text": "reasons for complete denials",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "advocare",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "1cd37b82-687c-404f-95a9-742c774d81ac",
+    "data": [
+      {
+        "text": "show me ",
+        "userDefined": false
+      },
+      {
+        "text": "total claims",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "NORTHWELL HEALTH SYSTEM",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      },
+      {
+        "text": " on ",
+        "userDefined": false
+      },
+      {
+        "text": "2017",
+        "alias": "year",
+        "meta": "@year",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "184dc2f5-51f7-42f5-9aec-ace601c4e45a",
+    "data": [
+      {
+        "text": "hey likhi, can you help me show ",
+        "userDefined": false
+      },
+      {
+        "text": "total claims",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for the account ",
+        "userDefined": false
+      },
+      {
+        "text": "advocare",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "2ab40a0d-7044-4457-b2d2-d33b8a73da7d",
+    "data": [
+      {
+        "text": "hello, is it possible to show me the ",
+        "userDefined": false
+      },
+      {
+        "text": "claims number",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "ADVOCARE",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "f707b20d-3bcd-4cdb-8b26-0b6b10065756",
+    "data": [
+      {
+        "text": "show me ",
+        "userDefined": false
+      },
+      {
+        "text": "how many claims",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " submitted for the account ",
+        "userDefined": false
+      },
+      {
+        "text": "affinity",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "6ab1c5ca-3fd0-4428-ba9b-e2e24dfe7bb2",
+    "data": [
+      {
+        "text": "can you show me ",
+        "userDefined": false
+      },
+      {
+        "text": "why claims are complete denials",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "ADVOCARE",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "35b04228-9e77-4b4a-a286-b433330589dc",
+    "data": [
+      {
+        "text": "show me ",
+        "userDefined": false
+      },
+      {
+        "text": "total claims",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": true
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "ADVOCARE",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": true
+      },
+      {
+        "text": "\n  on ",
+        "userDefined": false
+      },
+      {
+        "text": "2017",
+        "alias": "year",
+        "meta": "@year",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "01819371-45c2-433a-b0d2-87355ee5cdfb",
+    "data": [
+      {
+        "text": "show me ",
+        "userDefined": false
+      },
+      {
+        "text": "total claims",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for tin ",
+        "userDefined": false
+      },
+      {
+        "text": "1245841329",
+        "alias": "tinid",
+        "meta": "@tinid",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "64b0eca2-fcf5-41fe-8a11-d007dd303b0d",
+    "data": [
+      {
+        "text": "can you tell me ",
+        "userDefined": false
+      },
+      {
+        "text": "number of claims",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " submitted for ",
+        "userDefined": false
+      },
+      {
+        "text": "ADVOCARE",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "2d37f49e-b0e5-43cc-b011-c4ba96825e88",
+    "data": [
+      {
+        "text": "hat is the ",
+        "userDefined": false
+      },
+      {
+        "text": "amount paid",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "2017",
+        "alias": "year",
+        "meta": "@year",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "advocare",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "d60b937b-59fc-43db-b83a-51eef373c02a",
+    "data": [
+      {
+        "text": "hey, show me ",
+        "userDefined": false
+      },
+      {
+        "text": "AFFINITY",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "total claims",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "fed63648-1491-4753-8c80-c7cf91d4eb75",
+    "data": [
+      {
+        "text": "hello likhhi, would it possible to show me ",
+        "userDefined": false
+      },
+      {
+        "text": "history",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " of claims for the strategic account ",
+        "userDefined": false
+      },
+      {
+        "text": "advocare",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "68775b65-ed69-4874-944b-0899f98127df",
+    "data": [
+      {
+        "text": "show me ",
+        "userDefined": false
+      },
+      {
+        "text": "reasons for complete denials",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "NORTHWELL HEALTH SYSTEM",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "3a220036-0b61-4617-9c31-0dfb95aad09a",
+    "data": [
+      {
+        "text": "what is the ",
+        "userDefined": false
+      },
+      {
+        "text": "status of my claims",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": true
+      },
+      {
+        "text": " for tin id ",
+        "userDefined": false
+      },
+      {
+        "text": "1245841329",
+        "alias": "tinid",
+        "meta": "@tinid",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "d04d185a-ded6-4141-bc9a-b67dc5be7dfd",
+    "data": [
+      {
+        "text": "what is ",
+        "userDefined": false
+      },
+      {
+        "text": "ytd amount",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": true
+      },
+      {
+        "text": " for tin ",
+        "userDefined": false
+      },
+      {
+        "text": "2235370114",
+        "alias": "tinid",
+        "meta": "@tinid",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1520403894
+  },
+  {
+    "id": "dc68c417-4120-4e47-8fd8-3bc30b2d393c",
+    "data": [
+      {
+        "text": "what all the ",
+        "userDefined": false
+      },
+      {
+        "text": "reason codes for partial denial",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": true
+      },
+      {
+        "text": " with tin id ",
+        "userDefined": false
+      },
+      {
+        "text": "2235370114",
+        "alias": "tinid",
+        "meta": "@tinid",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "7e37c5f1-0ee5-4297-b654-a70dea247900",
+    "data": [
+      {
+        "text": "total claims",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "AFFINITY",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "41f6db9d-9244-4eea-b826-33df7ba91f6b",
+    "data": [
+      {
+        "text": "what is the total ",
+        "userDefined": false
+      },
+      {
+        "text": "numer of claims",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": true
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "NORTHWELL HEALTH SYSTEM",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      },
+      {
+        "text": " tin ",
+        "userDefined": false
+      },
+      {
+        "text": "1245841323",
+        "alias": "tinid",
+        "meta": "@tinid",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1520403894
+  },
+  {
+    "id": "8b76403c-e8c7-4dca-a95c-63add52f4e62",
+    "data": [
+      {
+        "text": "tell me the ",
+        "userDefined": false
+      },
+      {
+        "text": "reason for partial denial",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "advocare",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "f66e6fe3-04c9-455c-942e-d93059247a7b",
+    "data": [
+      {
+        "text": "show me ",
+        "userDefined": false
+      },
+      {
+        "text": "reason code for parital denial",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": true
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "claim number",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "2002",
+        "alias": "ClaimNumer",
+        "meta": "@ClaimNumer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  },
+  {
+    "id": "9f55fc68-4da7-4bce-abf8-c72b832cd12c",
+    "data": [
+      {
+        "text": "is there a way to get ",
+        "userDefined": false
+      },
+      {
+        "text": "status",
+        "alias": "query_identifier",
+        "meta": "@query_identifier",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "affinity",
+        "alias": "HospitalList",
+        "meta": "@HospitalList",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520403894
+  }
+]

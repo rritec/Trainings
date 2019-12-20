@@ -1,0 +1,975 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "complete denials reasons",
+            "start": 39,
+            "end": 63
+          },
+          {
+            "entity": "tinid",
+            "value": "2235370117",
+            "start": 75,
+            "end": 85
+          }
+        ],
+        "text": "okay, let me ask you a question to get complete denials reasons for tin id 2235370117"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "total claims",
+            "start": 8,
+            "end": 20
+          },
+          {
+            "entity": "HospitalList",
+            "value": "ADVOCARE",
+            "start": 25,
+            "end": 33
+          }
+        ],
+        "text": "what is total claims for ADVOCARE"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "reason codes for complete denial",
+            "start": 22,
+            "end": 54
+          },
+          {
+            "entity": "ClaimNumer",
+            "value": "3004",
+            "start": 65,
+            "end": 69
+          }
+        ],
+        "text": "get me the details of reason codes for complete denial for claim 3004"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "reason codes for partial denials",
+            "start": 0,
+            "end": 32
+          },
+          {
+            "entity": "HospitalList",
+            "value": "NORTHWELL HEALTH SYSTEM",
+            "start": 37,
+            "end": 60
+          }
+        ],
+        "text": "reason codes for partial denials for NORTHWELL HEALTH SYSTEM"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "how many cliams",
+            "start": 11,
+            "end": 26
+          },
+          {
+            "entity": "HospitalList",
+            "value": "affinity",
+            "start": 60,
+            "end": 68
+          }
+        ],
+        "text": "Hey likhi, how many cliams i have submitted for the account affinity"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "reason codes for complete denials",
+            "start": 20,
+            "end": 53
+          },
+          {
+            "entity": "HospitalList",
+            "value": "ADVOCARE",
+            "start": 58,
+            "end": 66
+          }
+        ],
+        "text": "can you show me the reason codes for complete denials for ADVOCARE"
+      },
+      {
+        "intent": "Response",
+        "entities": [],
+        "text": "show me the total claims for NORTHWELL HEALTH SYSTEM havin tin 1245841329 with claim number 1010"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "status of claims",
+            "start": 12,
+            "end": 28
+          },
+          {
+            "entity": "HospitalList",
+            "value": "NORTHWELL HEALTH SYSTEM",
+            "start": 33,
+            "end": 56
+          }
+        ],
+        "text": "what is the status of claims for NORTHWELL HEALTH SYSTEM"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "full details",
+            "start": 43,
+            "end": 55
+          },
+          {
+            "entity": "HospitalList",
+            "value": "advocare",
+            "start": 82,
+            "end": 90
+          }
+        ],
+        "text": "hello likhhi, would it possible to show me full details for the strategic account advocare"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "total claims",
+            "start": 12,
+            "end": 24
+          },
+          {
+            "entity": "HospitalList",
+            "value": "NORTHWELL HEALTH SYSTEM",
+            "start": 29,
+            "end": 52
+          },
+          {
+            "entity": "tinid",
+            "value": "1245841329",
+            "start": 63,
+            "end": 73
+          },
+          {
+            "entity": "ClaimNumer",
+            "value": "1010",
+            "start": 92,
+            "end": 96
+          },
+          {
+            "entity": "year",
+            "value": "2017",
+            "start": 106,
+            "end": 110
+          }
+        ],
+        "text": "show me the total claims for NORTHWELL HEALTH SYSTEM havin tin 1245841329 with claim number 1010 only for 2017"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "status",
+            "start": 12,
+            "end": 18
+          },
+          {
+            "entity": "HospitalList",
+            "value": "NORTHWELL HEALTH SYSTEM",
+            "start": 23,
+            "end": 46
+          },
+          {
+            "entity": "tinid",
+            "value": "1245841326",
+            "start": 58,
+            "end": 68
+          }
+        ],
+        "text": "show me the status for NORTHWELL HEALTH SYSTEM and tin id 1245841326"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "total claims",
+            "start": 8,
+            "end": 20
+          },
+          {
+            "entity": "HospitalList",
+            "value": "NORTHWELL HEALTH SYSTEM",
+            "start": 25,
+            "end": 48
+          },
+          {
+            "entity": "tinid",
+            "value": "1245841323",
+            "start": 62,
+            "end": 72
+          },
+          {
+            "entity": "ClaimNumer",
+            "value": "1001",
+            "start": 90,
+            "end": 94
+          }
+        ],
+        "text": "show me total claims for NORTHWELL HEALTH SYSTEM with tin id  1245841323 and claim number 1001"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "HospitalList",
+            "value": "NORTHWELL HEALTH SYSTEM",
+            "start": 0,
+            "end": 23
+          }
+        ],
+        "text": "NORTHWELL HEALTH SYSTEM"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "how many claims",
+            "start": 0,
+            "end": 15
+          },
+          {
+            "entity": "HospitalList",
+            "value": "AFFINITY",
+            "start": 43,
+            "end": 51
+          }
+        ],
+        "text": "how many claims submitted for hey, show me AFFINITY"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "why claims are completely denials",
+            "start": 0,
+            "end": 33
+          },
+          {
+            "entity": "HospitalList",
+            "value": "ADVOCARE",
+            "start": 38,
+            "end": 46
+          }
+        ],
+        "text": "why claims are completely denials for ADVOCARE"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "amount paid ytd",
+            "start": 8,
+            "end": 23
+          },
+          {
+            "entity": "HospitalList",
+            "value": "advocare",
+            "start": 28,
+            "end": 36
+          }
+        ],
+        "text": "what is amount paid ytd for advocare"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "partial denials reason codes",
+            "start": 8,
+            "end": 36
+          },
+          {
+            "entity": "HospitalList",
+            "value": "ADVOCARE",
+            "start": 41,
+            "end": 49
+          }
+        ],
+        "text": "what is partial denials reason codes for ADVOCARE"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "ytd amount",
+            "start": 8,
+            "end": 18
+          },
+          {
+            "entity": "HospitalList",
+            "value": "ADVOCARE",
+            "start": 23,
+            "end": 31
+          }
+        ],
+        "text": "what is ytd amount for ADVOCARE"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "total claims",
+            "start": 29,
+            "end": 41
+          },
+          {
+            "entity": "HospitalList",
+            "value": "ADVOCARE",
+            "start": 46,
+            "end": 54
+          }
+        ],
+        "text": "is it possible to get me the total claims for ADVOCARE"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "reasons of partial denial",
+            "start": 30,
+            "end": 55
+          },
+          {
+            "entity": "HospitalList",
+            "value": "advocare",
+            "start": 72,
+            "end": 80
+          }
+        ],
+        "text": "hey likhi, can you get me the reasons of partial denial for the account advocare"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "reasons of complete denial",
+            "start": 30,
+            "end": 56
+          },
+          {
+            "entity": "HospitalList",
+            "value": "advocare",
+            "start": 73,
+            "end": 81
+          }
+        ],
+        "text": "hey likhi, can you get me the reasons of complete denial for the account advocare"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "reasons for partial denials",
+            "start": 11,
+            "end": 38
+          },
+          {
+            "entity": "HospitalList",
+            "value": "advocare",
+            "start": 43,
+            "end": 51
+          }
+        ],
+        "text": "get me the reasons for partial denials for advocare"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "reason codes for partial denials",
+            "start": 8,
+            "end": 40
+          },
+          {
+            "entity": "HospitalList",
+            "value": "ADVOCARE",
+            "start": 45,
+            "end": 53
+          }
+        ],
+        "text": "show me reason codes for partial denials for ADVOCARE"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "total claims",
+            "start": 8,
+            "end": 20
+          },
+          {
+            "entity": "tinid",
+            "value": "1245841323",
+            "start": 33,
+            "end": 43
+          }
+        ],
+        "text": "show me total claims for the tin 1245841323"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "status",
+            "start": 15,
+            "end": 21
+          },
+          {
+            "entity": "HospitalList",
+            "value": "NORTHWELL HEALTH SYSTEM",
+            "start": 26,
+            "end": 49
+          }
+        ],
+        "text": "can you get me status for NORTHWELL HEALTH SYSTEM"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "reasons for complete denials",
+            "start": 11,
+            "end": 39
+          },
+          {
+            "entity": "HospitalList",
+            "value": "advocare",
+            "start": 44,
+            "end": 52
+          }
+        ],
+        "text": "get me the reasons for complete denials for advocare"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "total claims",
+            "start": 8,
+            "end": 20
+          },
+          {
+            "entity": "HospitalList",
+            "value": "NORTHWELL HEALTH SYSTEM",
+            "start": 25,
+            "end": 48
+          },
+          {
+            "entity": "year",
+            "value": "2017",
+            "start": 52,
+            "end": 56
+          }
+        ],
+        "text": "show me total claims for NORTHWELL HEALTH SYSTEM on 2017"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "total claims",
+            "start": 32,
+            "end": 44
+          },
+          {
+            "entity": "HospitalList",
+            "value": "advocare",
+            "start": 61,
+            "end": 69
+          }
+        ],
+        "text": "hey likhi, can you help me show total claims for the account advocare"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "claims number",
+            "start": 37,
+            "end": 50
+          },
+          {
+            "entity": "HospitalList",
+            "value": "ADVOCARE",
+            "start": 55,
+            "end": 63
+          }
+        ],
+        "text": "hello, is it possible to show me the claims number for ADVOCARE"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "how many claims",
+            "start": 8,
+            "end": 23
+          },
+          {
+            "entity": "HospitalList",
+            "value": "affinity",
+            "start": 50,
+            "end": 58
+          }
+        ],
+        "text": "show me how many claims submitted for the account affinity"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "why claims are complete denials",
+            "start": 16,
+            "end": 47
+          },
+          {
+            "entity": "HospitalList",
+            "value": "ADVOCARE",
+            "start": 52,
+            "end": 60
+          }
+        ],
+        "text": "can you show me why claims are complete denials for ADVOCARE"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "total claims",
+            "start": 8,
+            "end": 20
+          },
+          {
+            "entity": "HospitalList",
+            "value": "ADVOCARE",
+            "start": 25,
+            "end": 33
+          },
+          {
+            "entity": "year",
+            "value": "2017",
+            "start": 39,
+            "end": 43
+          }
+        ],
+        "text": "show me total claims for ADVOCARE\n  on 2017"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "total claims",
+            "start": 8,
+            "end": 20
+          },
+          {
+            "entity": "tinid",
+            "value": "1245841329",
+            "start": 29,
+            "end": 39
+          }
+        ],
+        "text": "show me total claims for tin 1245841329"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "number of claims",
+            "start": 16,
+            "end": 32
+          },
+          {
+            "entity": "HospitalList",
+            "value": "ADVOCARE",
+            "start": 47,
+            "end": 55
+          }
+        ],
+        "text": "can you tell me number of claims submitted for ADVOCARE"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "amount paid",
+            "start": 11,
+            "end": 22
+          },
+          {
+            "entity": "year",
+            "value": "2017",
+            "start": 26,
+            "end": 30
+          },
+          {
+            "entity": "HospitalList",
+            "value": "advocare",
+            "start": 35,
+            "end": 43
+          }
+        ],
+        "text": "hat is the amount paid in 2017 for advocare"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "HospitalList",
+            "value": "AFFINITY",
+            "start": 13,
+            "end": 21
+          },
+          {
+            "entity": "query_identifier",
+            "value": "total claims",
+            "start": 22,
+            "end": 34
+          }
+        ],
+        "text": "hey, show me AFFINITY total claims"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "history",
+            "start": 43,
+            "end": 50
+          },
+          {
+            "entity": "HospitalList",
+            "value": "advocare",
+            "start": 87,
+            "end": 95
+          }
+        ],
+        "text": "hello likhhi, would it possible to show me history of claims for the strategic account advocare"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "reasons for complete denials",
+            "start": 8,
+            "end": 36
+          },
+          {
+            "entity": "HospitalList",
+            "value": "NORTHWELL HEALTH SYSTEM",
+            "start": 41,
+            "end": 64
+          }
+        ],
+        "text": "show me reasons for complete denials for NORTHWELL HEALTH SYSTEM"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "status of my claims",
+            "start": 12,
+            "end": 31
+          },
+          {
+            "entity": "tinid",
+            "value": "1245841329",
+            "start": 43,
+            "end": 53
+          }
+        ],
+        "text": "what is the status of my claims for tin id 1245841329"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "ytd amount",
+            "start": 8,
+            "end": 18
+          },
+          {
+            "entity": "tinid",
+            "value": "2235370114",
+            "start": 27,
+            "end": 37
+          }
+        ],
+        "text": "what is ytd amount for tin 2235370114"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "reason codes for partial denial",
+            "start": 13,
+            "end": 44
+          },
+          {
+            "entity": "tinid",
+            "value": "2235370114",
+            "start": 57,
+            "end": 67
+          }
+        ],
+        "text": "what all the reason codes for partial denial with tin id 2235370114"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "total claims",
+            "start": 0,
+            "end": 12
+          },
+          {
+            "entity": "HospitalList",
+            "value": "AFFINITY",
+            "start": 17,
+            "end": 25
+          }
+        ],
+        "text": "total claims for AFFINITY"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "numer of claims",
+            "start": 18,
+            "end": 33
+          },
+          {
+            "entity": "HospitalList",
+            "value": "NORTHWELL HEALTH SYSTEM",
+            "start": 38,
+            "end": 61
+          },
+          {
+            "entity": "tinid",
+            "value": "1245841323",
+            "start": 66,
+            "end": 76
+          }
+        ],
+        "text": "what is the total numer of claims for NORTHWELL HEALTH SYSTEM tin 1245841323"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "reason for partial denial",
+            "start": 12,
+            "end": 37
+          },
+          {
+            "entity": "HospitalList",
+            "value": "advocare",
+            "start": 41,
+            "end": 49
+          }
+        ],
+        "text": "tell me the reason for partial denial in advocare"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "reason code for parital denial",
+            "start": 8,
+            "end": 38
+          },
+          {
+            "entity": "ClaimNumer",
+            "value": "2002",
+            "start": 56,
+            "end": 60
+          }
+        ],
+        "text": "show me reason code for parital denial for claim number 2002"
+      },
+      {
+        "intent": "Response",
+        "entities": [
+          {
+            "entity": "query_identifier",
+            "value": "status",
+            "start": 22,
+            "end": 28
+          },
+          {
+            "entity": "HospitalList",
+            "value": "affinity",
+            "start": 33,
+            "end": 41
+          }
+        ],
+        "text": "is there a way to get status for affinity"
+      }
+    ],
+    "regex_features": [],
+    "entity_synonyms": [
+      {
+        "value": "NORTHWELL HEALTH SYSTEM",
+        "synonyms": [
+          "NHS",
+          "northwell health system"
+        ]
+      },
+      {
+        "value": "number of claims",
+        "synonyms": [
+          "total number of claims",
+          "claims number",
+          "total claims",
+          "how many claims",
+          "how many claim"
+        ]
+      },
+      {
+        "value": "complete denials reason code",
+        "synonyms": [
+          "complete denial reason code",
+          "complete denial reason codes",
+          "reason code for complete denials",
+          "reason code for complete denial",
+          "why my claims are completely denials",
+          "why claims are complete denial",
+          "why claims are complete denials",
+          "complete denials reasons",
+          "reason for complete denial"
+        ]
+      },
+      {
+        "value": "ytd",
+        "synonyms": [
+          "amount paid ytd",
+          "ytd amount"
+        ]
+      },
+      {
+        "value": "status",
+        "synonyms": [
+          "status of claims",
+          "claims status",
+          "details",
+          "history",
+          "full details",
+          "all details",
+          "overall status",
+          "ovearll info"
+        ]
+      },
+      {
+        "value": "amount paid",
+        "synonyms": [
+          "amount_paid"
+        ]
+      },
+      {
+        "value": "complete denials",
+        "synonyms": [
+          "complete denial",
+          "denial complete",
+          "denials complete",
+          "how many complete denials"
+        ]
+      },
+      {
+        "value": "partial denials reason code",
+        "synonyms": [
+          "reason code for partial denials",
+          "reason code for partial denial",
+          "partial denail reason code",
+          "why claims are partial denials",
+          "why clims are partially denied",
+          "claims are partially denied",
+          "claims are partial denial",
+          "reason for partial denial",
+          "reasons for partial denails"
+        ]
+      },
+      {
+        "value": "partial denials",
+        "synonyms": [
+          "denials partial",
+          "partial denial",
+          "denial partial",
+          "how many partial denials"
+        ]
+      },
+      {
+        "value": "appeals",
+        "synonyms": [
+          "appeal",
+          "appeals status",
+          "how many appeals"
+        ]
+      }
+    ]
+  }
+}

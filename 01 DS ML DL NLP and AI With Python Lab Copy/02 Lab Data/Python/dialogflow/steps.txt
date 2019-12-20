@@ -1,0 +1,43 @@
+C:\\Users\\Hi\\Google Drive\\01 Data Science Lab Copy\\02 Lab Data\\Python\\dialogflow\\projects\\data\\examples\\rasa
+
+##########################
+Step 1: Create config_spacy.json with below content 
+##########################
+
+{
+  "pipeline": "spacy_sklearn",
+  "path" : "C:\\Users\\Hi\\Google Drive\\01 Data Science Lab Copy\\02 Lab Data\\Python\\dialogflow\\projects",
+  "data" : "C:\\Users\\Hi\\Google Drive\\01 Data Science Lab Copy\\02 Lab Data\\Python\\dialogflow\\projects\\data\\examples\\rasa"
+}
+
+
+##########################
+Step 2: Train The Model by executing in anconda prompt
+##########################
+
+python -m rasa_nlu.train -c "C:\\Users\\Hi\\Google Drive\\01 Data Science Lab Copy\\02 Lab Data\\Python\\dialogflow\\config_spacy.json"
+
+# it should create model C:\Users\Hi\Google Drive\01 Data Science Lab Copy\02 Lab Data\Python\dialogflow\projects\default\model_20180404-121940
+##########################
+Step 3: Start the rasa server
+##########################
+
+python -m rasa_nlu.server -c "C:\\Users\\Hi\\Google Drive\\01 Data Science Lab Copy\\02 Lab Data\\Python\\dialogflow\\config_spacy.json"
+
+##########################
+Step 4: get json 
+##########################
+curl -X POST localhost:5000/parse -d '{"q":"can you show me the reason codes for complete denials for ADVOCARE"}' | python -m json.tool
+
+curl -X POST localhost:5000/parse -d '{"q":"hi"}' | python -m json.tool
+
+issue:
+
+https://github.com/RasaHQ/rasa_nlu/issues/776
+
+curl -i -X POST -H "Content-Type:application/json" -d "{"q": "I am looking for Chinese food", "model" : "your_model_name" }" http://127.0.0.1:5000/parse
+
+curl -X POST "http://localhost:5000/parse" -d "{\"q\":\"hi\"}" | python -m json.tool
+
+
+curl -X POST "http://localhost:5000/parse" -d "{\"q\":\"can you show me the reason codes for complete denials for ADVOCARE\"}" | python -m json.tool

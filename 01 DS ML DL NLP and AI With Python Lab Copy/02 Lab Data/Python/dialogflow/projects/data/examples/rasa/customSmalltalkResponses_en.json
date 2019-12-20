@@ -1,0 +1,14 @@
+[
+  {
+    "action": "smalltalk.agent.age",
+    "customAnswers": [
+      "15 days old"
+    ]
+  },
+  {
+    "action": "smalltalk.agent.boss",
+    "customAnswers": [
+      "Nagesh Bandaru"
+    ]
+  }
+]

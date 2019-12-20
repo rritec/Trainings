@@ -1,0 +1,146 @@
+#Step 1: Import required libraries 
+from pandas.io.parsers import read_csv
+import numpy as np
+import pandas as pd
+from sklearn.cross_validation import train_test_split
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+from sklearn import preprocessing
+from imblearn.over_sampling import SMOTE                   # For Oversampling
+#from outliers import smirnov_grubbs as grubbs
+from sklearn.feature_selection import SelectKBest
+from sklearn.feature_selection import chi2
+from sklearn.cluster import KMeans
+
+from sklearn.decomposition import PCA
+from sklearn.naive_bayes import GaussianNB, BernoulliNB
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+
+
+
+
+#Step 2: Read train,test data and Partition train Data as train and validation
+
+dataset = read_csv('carvan_train.csv')
+#str(dataset)
+dataset.describe()
+print('Variables selected :  ', list(dataset.columns.values[[3,10,16,25,29,31,33,40,41,42,43,44,47,59,61,68]]))
+#These variables selected after 
+#1. Finding Pearson correlation co-efficient and removing input variables that are highly co-related (keeping one of them) 
+#2. Creating Random Forest model and selecting variables after Variable Importance plot.
+#3. Number vatiables are 16
+
+var =16
+selected = dataset.columns.values[[2,9,15,24,28,30,32,39,40,41,42,43,46,58,60,67]]
+
+X = (dataset[dataset.columns[[2,9,15,24,28,30,32,39,40,41,42,43,46,58,60,67]]].values)
+
+# Normalization - Using MinMax Scaler
+min_max_scaler = preprocessing.MinMaxScaler()
+X = min_max_scaler.fit_transform(X)
+X
+y = np.vstack(dataset['V86'].values)
+y
+
+X_train_original, X_val, y_train_original, y_val = train_test_split(X_test2, y_test2, test_size=0.33,random_state=42)
+
+# Used Seed in Partitioning so that Test Set remains same for every Run
+
+# Loading test data
+dataset1 = read_csv('carvan_test.csv')
+
+
+selected = dataset1.columns.values[[2,9,15,24,28,30,32,39,40,41,42,43,46,58,60,67]]
+
+X_test = (dataset1[dataset1.columns[[2,9,15,24,28,30,32,39,40,41,42,43,46,58,60,67]]].values)
+X_test
+# Normalization - Using MinMax Scaler
+min_max_scaler = preprocessing.MinMaxScaler()
+X_test = min_max_scaler.fit_transform(X_test)
+X_test
+
+# Step 3: Outlier Detection
+
+#for i in range(var):
+#    print((grubbs.test(X_train[:,i], alpha=0.025).reshape(-1)).shape)
+
+# Step 4: Oversampling of underrepresented class
+
+doOversampling = True
+
+if doOversampling:
+# Apply regular SMOTE
+    sm = SMOTE(kind='regular')
+    X_train, y_train = sm.fit_sample(X_train_original, y_train_original)
+    print('Training Set Shape after oversampling:   ', X_train.shape, y_train.shape)
+    print(pd.crosstab(y_train,y_train))
+else:
+    X_train = X_train_original
+    y_train = y_train_original
+    
+# Step 5: Feature Reduction thru PCA - Not used in final phase
+
+doPCA = False
+
+if doPCA:
+    pca = PCA(svd_solver='randomized',n_components=10,random_state=42).fit(X_train)
+
+    X_train = pca.transform(X_train)
+    X_val = pca.transform(X_val)
+    #print(pca.components_)
+    #print(pca.explained_variance_)
+    #print(pca.explained_variance_ratio_) 
+    #print(pca.mean_)
+    print(pca.n_components_)
+    print(pca.noise_variance_)
+    plt.figure(1, figsize=(8, 4.5))
+    plt.clf()
+    plt.axes([.2, .2, .7, .7])
+    plt.plot(pca.explained_variance_, linewidth=2)
+    plt.axis('tight')
+    plt.xlabel('n_components')
+    plt.ylabel('explained_variance_')
+    plt.show()
+else:
+    X_train = X_train
+    X_val = X_val 
+    
+# Step 6: Flag for Final Run    
+    
+Final_Run = True          # Will Not Process Test Set if value is False    
+
+
+# Step 7:Build Models
+#Decision Tree Classifier
+clf_DT = DecisionTreeClassifier(criterion='gini', splitter='best', max_depth=10, 
+                                min_samples_split=2, min_samples_leaf=1, 
+                                min_weight_fraction_leaf=0.0, max_features=None, 
+                                max_leaf_nodes=None, min_impurity_split=1e-07)
+clf_DT.fit(X_train, y_train)
+y_pred_DT = clf_DT.predict(X_val)
+
+
+
+
+# Model Performance Comparison
+
+print('       Accuracy of Models       ')
+print('--------------------------------')
+print('Decision Tree           '+"{:.2f}".format(accuracy_score(y_val, y_pred_DT)*100)+'%')
+
+
+# Print Confusion Matrix for all Models
+
+print('Decision Tree  ')
+cm_DT = confusion_matrix(y_val,y_pred_DT)
+print(cm_DT)
+print('\n')
+
+# Step 8: Predict on test data
+
+y_pred_DT = clf_DT.predict(X_test)
+
+np.savetxt('test.csv',y_pred_DT,delimiter=',')
+

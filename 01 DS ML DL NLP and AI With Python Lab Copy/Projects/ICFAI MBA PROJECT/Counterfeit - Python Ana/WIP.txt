@@ -1,0 +1,100 @@
+# Import modules
+from pandas.io.parsers import read_csv
+import pandas as pd
+from sklearn import preprocessing
+from sklearn.cross_validation import train_test_split
+from sklearn.ensemble import RandomForestRegressor
+
+# Read train Data
+train_orginal = pd.read_csv("counterfeit_train.csv")
+train_orginal.info() # 6818 * 12 Columns
+
+# Remove null rows
+train = train_orginal.dropna(axis = 0) # use axis = 1 to drop columns
+train.info()
+
+X = (train[train.columns[1:11]].values)
+type(X)
+y = (train[train.columns[11]].values)
+type(y)
+
+#Split train data into train and validation data 
+
+X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.3,random_state=42)
+type(X_train)
+
+from sklearn.preprocessing import OneHotEncoder
+enc = OneHotEncoder()
+enc.fit(X_train,y)
+rfr = RandomForestRegressor(n_estimators = 10,
+                                      criterion = 'mse',
+                                      random_state = 0)
+rfr.fit(X_train, y_train) 
+# var_X is the array of independant variables and var_y 
+# is an array of dependant variable
+
+
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.datasets import make_regression
+
+X, y = make_regression(n_features=4, n_informative=2,
+                       random_state=0, shuffle=False)
+regr = RandomForestRegressor(max_depth=2, random_state=0)
+regr.fit(X, y)
+
+
+
+
+
+
+print(regr.feature_importances_)
+
+print(regr.predict([[0, 0, 0, 0]]))
+
+
+
+
+
+
+
+from sklearn import datasets
+
+boston = datasets.load_boston()
+features = pd.DataFrame(boston.data, columns=boston.feature_names)
+targets = boston.target
+
+type(features)
+type(targets)
+from sklearn.preprocessing import StandardScaler
+from sklearn.cross_validation import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(features, targets, train_size=0.8, random_state=42)
+scaler = StandardScaler().fit(X_train)
+X_train_scaled = pd.DataFrame(scaler.transform(X_train), index=X_train.index.values, columns=X_train.columns.values)
+X_test_scaled = pd.DataFrame(scaler.transform(X_test), index=X_test.index.values, columns=X_test.columns.values)
+
+from sklearn.decomposition import PCA
+pca = PCA()
+pca.fit(X_train)
+cpts = pd.DataFrame(pca.transform(X_train))
+x_axis = np.arange(1, pca.n_components_+1)
+pca_scaled = PCA()
+pca_scaled.fit(X_train_scaled)
+cpts_scaled = pd.DataFrame(pca.transform(X_train_scaled))
+
+
+from sklearn.ensemble import RandomForestRegressor
+rf = RandomForestRegressor(n_estimators=500, oob_score=True, random_state=0)
+rf.fit(X_train, y_train)
+from sklearn.metrics import r2_score
+from scipy.stats import spearmanr, pearsonr
+predicted_train = rf.predict(X_train)
+predicted_test = rf.predict(X_test)
+test_score = r2_score(y_test, predicted_test)
+spearman = spearmanr(y_test, predicted_test)
+pearson = pearsonr(y_test, predicted_test)
+print(f'Out-of-bag R-2 score estimate: {rf.oob_score_:>5.3}')
+print(f'Test data R-2 score: {test_score:>5.3}')
+print(f'Test data Spearman correlation: {spearman[0]:.3}')
+print(f'Test data Pearson correlation: {pearson[0]:.3}')
+enc = OneHotEncoder()
+enc.fit([[0, 0, 3], [1, 'a', 0], [0, 2, 1], [1, 0, 2]])  

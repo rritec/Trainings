@@ -1,0 +1,3 @@
+https://rpubs.com/more11neha/decisionRF
+
+http://www.blopig.com/blog/2017/07/using-random-forests-in-python-with-scikit-learn/
